@@ -1,6 +1,9 @@
 KBEVI
 
+
 KBEVI es un catálogo web que administra productos de teclados personalizados. Es un CRUD sencillo desarrollado con PHP, HTML y CSS, creado durante mi periodo de prácticas en la empresa EVIROM. Este proyecto representa mi primer desarrollo funcional.
+
+
 🚀 Características
 
     Gestión de productos: crear, leer, actualizar y eliminar.
