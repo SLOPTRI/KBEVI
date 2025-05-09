@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+p, a, h1,td,button{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #024959;
+}
+
+.logo__text {
+    display: flex;
+    gap: .8rem;
+    color: #F2C12E;
+}
+
+.logo__text__letter {
+    transition: .3s color;
+}
+
+.logo__text__letter:hover {
+    color:#F2AE30;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #024959;
+    padding: 1rem 2rem;
+}
+
+.header__logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    flex-grow: 1;
+}
+.main__admin{
+    display: grid;
+    grid-template-columns: 7fr;
+    flex-grow: 1;
+}
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 9rem;
+}
+
+.keyboard__text {
+    font-weight: bold;
+    color: #593E25;
+}
+
+.menu__container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem .4rem;
+}
+
+.menu__container__text {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.footer__container__text a {
+    color: #F2C12E;
+}
+.footer__container__text{
+    color: #ffffff;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu__item {
+    padding: 1rem 0;
+    text-align: center;
+    transition: .3s background-color,color;
+    border-radius: 5px;
+}
+
+.menu__item:hover {
+    background-color: #F2AE30;
+    color: #593E25;
+}
+
+.footer {
+    background-color:#024959;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .footer__text {
+    color: white;
+}
+.keyboard__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+}
+.keyboard__container__top, .keyboard__container__bottom{
+    width: 95%;
+    height: 47%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+.keyboard__container__top__item, .keyboard__container__bottom__item{
+    width: 50%;
+    height: 100%;
+    transition: .35s filter;
+}
+.keyboard__container__top__item:hover, .keyboard__container__bottom__item:hover{
+    filter: brightness(.8);
+}
+
+.keyboard__container__bottom__item__right{
+    border-bottom-right-radius: 8px;
+}
+.keyboard__container__bottom__item__left{
+    border-bottom-left-radius: 8px;
+}
+.keyboard__container__top__item__right{
+    border-top-right-radius: 8px;
+}
+.keyboard__container__top__item__left{
+    border-top-left-radius: 8px;
+}
+.admin__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.admin__menu__item {
+    padding: 1rem 0;
+    text-align: center;
+    transition: .3s background-color,color;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 22%;
+}
+
+.admin__menu__item:hover {
+    background-color: #F2AE30;
+    color: #593E25;
+}
+.main__admin__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main__admin__container__form{
+    width: 100%;
+    color: #024959;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    color: #024959;
+}
+article{
+    display: flex;
+    column-gap: .4rem;
+}
+.main__admin__container__form__buttom{
+    color: #024959;
+    background-color: #F2C12E;
+}
+.main__admin__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #024959;
+}
+.header__admin__a{
+    color:#F2C12E;
+    font-size: 1.1rem;
+    transition: .3s font-size,color;
+}
+.header__admin__a:hover{
+    color: #F2AE30;
+    font-size: 1.2rem;
+}
+.main__admin__db{
+    display: flex;
+    justify-content: center;
+}
+.main__admin__db__table{
+    width: 50%;
+    border-collapse: collapse;
+    color: #024959;
+}
+.main__admin__db__table__tr{
+    border: 1px solid transparent;
+    border-bottom: 1px solid #024959;
+}
+.main__admin__db__table__tr:first-child{
+    font-weight: bold;
+}
+.main__admin__db__table__tr td{
+    padding: 15px;
+}
+.main__admin__db__table__edit{
+    color: white;
+    background-color: #024959;
+    border-radius: 3px;
+    padding: 3.5px;
+}
+
+.main__admin__db__table__delete{
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    padding: 3.5px;
+    border: none;
+    font-weight: bold;
+}
+.main__admin__db__table__delete a{
+    color: white;
+    text-decoration: none;
+}
+.main__admin__db__table__tr__img{
+    width: 45%;
+}
+.main__admin__db__table__seguro{
+    display: flex;
+    flex-direction: row;
+}
+.main__admin__db__table__delete__seguro{
+    margin-left: 25px;
+}
+.product__row{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.product__row__item img{
+    width: 65%;
+    transition: width;
+    border-radius: 3px;
+}
+.product__row__item{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+}
+.product__row__item__text{
+    color: #024959;
+}
+.product{
+    margin-top: 2.5rem;
+}
+.product__row__item img:hover{
+    width: 67%;
+    transition: .35s width;
+}
+.menu__movil{
+    visibility: hidden;
+}
+.product__row__tittle h1{
+    color: #024959;
+    margin: 25% 0 25% 0;
+}
+
+
+@media(max-width:550px){
+    .menu__container{
+        visibility: hidden;
+    }
+    .product{
+        margin-left: 25%;
+    }
+    .product__row__item h1{
+        font-size: 1.1rem;
+    }
+    .menu__movil{
+        visibility: visible;
+        display: flex;
+        gap: .7rem;
+    }
+    .menu__movil a{
+        color: white;
+        font-size:0.9rem;
+    }
+    .keyboard{
+        width: 127%;
+        padding: 0;
+    }
+}
